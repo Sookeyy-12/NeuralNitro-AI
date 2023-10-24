@@ -11,3 +11,4 @@ This log is meant to keep a track of the development process of this project. It
 - Choose the track layouts for curriculum learning. Yet to add it in the game.
 - Added 2 Oval tracks to the project for curriculum learning.
 - Added Car to the game which can be controlled by the **Player**.
+- Camera follows the car when in play mode.
