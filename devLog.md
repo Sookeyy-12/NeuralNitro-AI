@@ -5,3 +5,7 @@ This log is meant to keep a track of the development process of this project. It
 ### 2023-10-23
 - Initialized the Project, set up git and github.
 - Added ML_Agents20 package. Was supposed to use ML_Agents21 but it was giving error while installing dependencies.
+
+### 2023-10-24
+- Set up car the car controls. Yet to add it in the game.
+- Choose the track layouts for curriculum learning. Yet to add it in the game.
