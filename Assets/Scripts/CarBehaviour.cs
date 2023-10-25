@@ -5,11 +5,14 @@ using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 using System;
+using UnityEditor;
 
 public class CarBehaviour : Agent
 {
+    public Rigidbody rBody;
 
     public CarController controller;
+    public GameObject spawn;
 
     private float verticalInput;
     private float horizontalInput;
@@ -18,16 +21,18 @@ public class CarBehaviour : Agent
     public override void Initialize()
     {
         controller = GetComponent<CarController>();
+        rBody = GetComponent<Rigidbody>();
     }
 
     public override void OnEpisodeBegin()
     {
-        
+        ResetEnv();
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        
+        // Velocity of the car
+        sensor.AddObservation(rBody.velocity);
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -54,5 +59,13 @@ public class CarBehaviour : Agent
 
         continuousActionsOut[0] = Input.GetAxis("Vertical");
         continuousActionsOut[1] = Input.GetAxis("Horizontal");
+    }
+
+    public void ResetEnv()
+    {
+        this.transform.position = spawn.transform.position;
+        this.transform.rotation = spawn.transform.rotation;
+        rBody.velocity = Vector3.zero;
+        rBody.angularVelocity = Vector3.zero;
     }
 }
