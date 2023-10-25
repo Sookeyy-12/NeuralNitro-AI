@@ -21,3 +21,4 @@ This log is meant to keep a track of the development process of this project. It
 - Updated behaviour script to reset the car position, rotation and velocity on ResetEnv()
 - Made Walls (red) and Checkpoints (green) translucent in the game view.
 - Added 2 Ray perception sensors to the Car. One for detecting Walls and other to detect the Checkpoints.
+- Added DetectCollision script to detect collisions with Wall and Checkpoint for rewarding/punishing the agent.
