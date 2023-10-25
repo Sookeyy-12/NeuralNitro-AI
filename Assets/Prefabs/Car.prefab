@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5193764075521130484}
   - component: {fileID: 4551152091882509161}
-  - component: {fileID: 4327341696290666162}
   - component: {fileID: 968790553180875452}
+  - component: {fileID: 4794058960903166191}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -63,29 +63,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4327341696290666162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 50068668262041116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c62bcca2be128b4ab1388950e30e492, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  motorForce: 2000
-  breakForce: 5000
-  maxSteerAngle: 40
-  frontLeftWheelCollider: {fileID: 7220470720549921160}
-  frontRightWheelCollider: {fileID: 6954330093613021326}
-  rearLeftWheelCollider: {fileID: 3799123329961852963}
-  rearRightWheelCollider: {fileID: 4058350062413150812}
-  frontLeftWheelTransform: {fileID: 3692046299419282412}
-  frontRightWheelTransform: {fileID: 5834020534767040506}
-  rearLeftWheelTransform: {fileID: 717539339755380284}
-  rearRightWheelTransform: {fileID: 3898614579666061351}
 --- !u!65 &968790553180875452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -107,6 +84,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.2113657, y: 1.4631691, z: 5.1911364}
   m_Center: {x: -0.00000023841858, y: -0.00593853, z: 0.0370121}
+--- !u!114 &4794058960903166191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50068668262041116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c62bcca2be128b4ab1388950e30e492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  motorForce: 2000
+  breakForce: 5000
+  maxSteerAngle: 40
+  wheelFLcollider: {fileID: 7220470720549921160}
+  wheelFRcollider: {fileID: 6954330093613021326}
+  wheelBLcollider: {fileID: 3799123329961852963}
+  wheelBRcollider: {fileID: 4058350062413150812}
+  wheelFLtransform: {fileID: 3692046299419282412}
+  wheelFRtransform: {fileID: 5834020534767040506}
+  wheelBLtransform: {fileID: 717539339755380284}
+  wheelBRtransform: {fileID: 3898614579666061351}
 --- !u!1 &948127236415610599
 GameObject:
   m_ObjectHideFlags: 0

@@ -1275,11 +1275,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115052224}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!146 &127356113 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 4058350062413150812, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
-  m_PrefabInstance: {fileID: 1911849242}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &131738883
 GameObject:
   m_ObjectHideFlags: 0
@@ -3450,11 +3445,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7276925260861940167, guid: 419b5557461398443a4b99d9496015fc, type: 3}
   m_PrefabInstance: {fileID: 425645529}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &426450527 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3692046299419282412, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
-  m_PrefabInstance: {fileID: 1911849242}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &438067394
 GameObject:
   m_ObjectHideFlags: 0
@@ -5480,7 +5470,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 50068668262041116, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
   m_PrefabInstance: {fileID: 1911849242}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &639180154
+--- !u!114 &639180158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5489,20 +5479,59 @@ MonoBehaviour:
   m_GameObject: {fileID: 639180152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c62bcca2be128b4ab1388950e30e492, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motorForce: 2000
-  breakForce: 5000
-  maxSteerAngle: 40
-  frontLeftWheelCollider: {fileID: 847820478}
-  frontRightWheelCollider: {fileID: 1925814326}
-  rearLeftWheelCollider: {fileID: 1429069904}
-  rearRightWheelCollider: {fileID: 127356113}
-  frontLeftWheelTransform: {fileID: 426450527}
-  frontRightWheelTransform: {fileID: 706678523}
-  rearLeftWheelTransform: {fileID: 2073266722}
-  rearRightWheelTransform: {fileID: 1279441566}
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
+--- !u!114 &639180159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639180152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3965f0213c87b4486a9594123442e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  controller: {fileID: 0}
+--- !u!114 &639180160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639180152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 0
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 2
+      BranchSizes: 
+    VectorActionSize: 02000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 1
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 3
+  m_BehaviorType: 1
+  m_BehaviorName: RaceCar
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_DeterministicInference: 0
+  m_ObservableAttributeHandling: 0
 --- !u!1001 &644823988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6017,11 +6046,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!4 &706678523 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5834020534767040506, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
-  m_PrefabInstance: {fileID: 1911849242}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &731471464
 GameObject:
   m_ObjectHideFlags: 0
@@ -7520,11 +7544,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846745865}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!146 &847820478 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 7220470720549921160, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
-  m_PrefabInstance: {fileID: 1911849242}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &868868862
 GameObject:
   m_ObjectHideFlags: 0
@@ -10695,11 +10714,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2581800735424805860, guid: 1060f28bab45ab94eb490830df68466e, type: 3}
   m_PrefabInstance: {fileID: 1270777589}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1279441566 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3898614579666061351, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
-  m_PrefabInstance: {fileID: 1911849242}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1280089536
 GameObject:
   m_ObjectHideFlags: 0
@@ -11933,11 +11947,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421074461}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!146 &1429069904 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 3799123329961852963, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
-  m_PrefabInstance: {fileID: 1911849242}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1444992841
 GameObject:
   m_ObjectHideFlags: 0
@@ -16234,6 +16243,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 4794058960903166191, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
+      propertyPath: breakForce
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794058960903166191, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
+      propertyPath: motorForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794058960903166191, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
+      propertyPath: maxSteerAngle
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 5193764075521130484, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -16274,14 +16295,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4327341696290666162, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 50068668262041116, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 639180154}
+      addedObject: {fileID: 639180160}
+    - targetCorrespondingSourceObject: {fileID: 50068668262041116, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 639180159}
+    - targetCorrespondingSourceObject: {fileID: 50068668262041116, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 639180158}
   m_SourcePrefab: {fileID: 100100000, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
 --- !u!1 &1914813856
 GameObject:
@@ -16562,11 +16588,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7076171558262013721, guid: ac0f6076afd4dde4f82fd5097f69adc9, type: 3}
   m_PrefabInstance: {fileID: 1925514856}
-  m_PrefabAsset: {fileID: 0}
---- !u!146 &1925814326 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 6954330093613021326, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
-  m_PrefabInstance: {fileID: 1911849242}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1936945115
 GameObject:
@@ -17653,11 +17674,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070146664}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2073266722 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 717539339755380284, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
-  m_PrefabInstance: {fileID: 1911849242}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2082491751
 GameObject:
   m_ObjectHideFlags: 0
