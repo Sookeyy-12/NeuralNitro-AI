@@ -12,3 +12,6 @@ This log is meant to keep a track of the development process of this project. It
 - Added 2 Oval tracks to the project for curriculum learning.
 - Added Car to the game which can be controlled by the **Player**.
 - Camera follows the car when in play mode.
+
+### 2023-10-25
+- Added track walls and checkpoints to the first oval track.
