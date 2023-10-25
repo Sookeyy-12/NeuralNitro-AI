@@ -32,7 +32,8 @@ public class CarBehaviour : Agent
     public override void CollectObservations(VectorSensor sensor)
     {
         // Velocity of the car
-        sensor.AddObservation(rBody.velocity);
+        //Vector3 vel = rBody.velocity;
+        //sensor.AddObservation(vel);
     }
 
     public override void OnActionReceived(ActionBuffers actions)
