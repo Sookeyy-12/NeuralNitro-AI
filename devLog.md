@@ -15,3 +15,4 @@ This log is meant to keep a track of the development process of this project. It
 
 ### 2023-10-25
 - Added track walls and checkpoints to the first oval track.
+- Added behaviour script for the car. (Only OnActionRecieved() and Heuristics() are set as of now)
