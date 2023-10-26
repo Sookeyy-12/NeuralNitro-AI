@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
-using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
+using Unity.MLAgents.Actuators;
 using System;
 using UnityEditor;
 
@@ -18,6 +18,10 @@ public class CarBehaviour : Agent
     private float horizontalInput;
     private bool isBreaking;
 
+    private float maxTime = 60.0f, currentTime;
+
+    private Vector3 vel;
+
     public override void Initialize()
     {
         controller = GetComponent<CarController>();
@@ -27,18 +31,23 @@ public class CarBehaviour : Agent
     public override void OnEpisodeBegin()
     {
         ResetEnv();
+        currentTime = 0.0f;
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        // Velocity of the car
-        //Vector3 vel = rBody.velocity;
-        //sensor.AddObservation(vel);
+        // Add velocity of the agent as an observation
     }
 
     public override void OnActionReceived(ActionBuffers actions)
     {
         MoveAgent(actions);
+
+        currentTime += Time.fixedDeltaTime;
+        if (currentTime >= maxTime)
+        {
+            EndEpisode();
+        }
     }
 
     public void MoveAgent(ActionBuffers actions)

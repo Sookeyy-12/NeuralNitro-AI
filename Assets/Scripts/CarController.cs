@@ -9,6 +9,8 @@ public class CarController : MonoBehaviour
     private float currentSteerAngle, currentbreakForce;
     private bool isBreaking;
 
+    public Rigidbody rb;
+
     // Settings
     [SerializeField] private float motorForce, breakForce, maxSteerAngle;
 

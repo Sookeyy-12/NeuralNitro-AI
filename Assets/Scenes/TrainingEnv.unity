@@ -5501,7 +5501,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 50068668262041116, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
   m_PrefabInstance: {fileID: 1911849242}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &639180165
+--- !u!114 &639180173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5510,10 +5510,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 639180152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 576202ff5fdc4854c84f0d104169d102, type: 3}
+  m_Script: {fileID: 11500000, guid: f2902496c0120472b90269f94a0aec7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carBehaviour: {fileID: 0}
+  Record: 0
+  NumStepsToRecord: 0
+  DemonstrationName: demo
+  DemonstrationDirectory: ./Demo
+--- !u!54 &639180181 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4551152091882509161, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
+  m_PrefabInstance: {fileID: 1911849242}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &644823988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16225,6 +16233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 4794058960903166191, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 639180181}
     - target: {fileID: 5193764075521130484, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -16265,6 +16277,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6811545588869922669, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811545588869922669, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
+      propertyPath: m_BehaviorType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7946455167029645228, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
       propertyPath: rBody
       value: 
@@ -16283,7 +16303,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 50068668262041116, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 639180165}
+      addedObject: {fileID: 639180173}
   m_SourcePrefab: {fileID: 100100000, guid: 997a8fb77532cf543b1f769eb9c05e7b, type: 3}
 --- !u!1 &1914813856
 GameObject:
