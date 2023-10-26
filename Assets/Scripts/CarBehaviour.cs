@@ -20,7 +20,7 @@ public class CarBehaviour : Agent
 
     private float maxTime = 60.0f, currentTime;
 
-    private Vector3 vel;
+    private float speed;
 
     public override void Initialize()
     {
@@ -36,7 +36,11 @@ public class CarBehaviour : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        // Add velocity of the agent as an observation
+        // Add speed of the agent as an observation
+        Vector3 vel = rBody.velocity;
+        speed = vel.magnitude;
+        Debug.Log((int)speed);
+        sensor.AddObservation(speed);
     }
 
     public override void OnActionReceived(ActionBuffers actions)
