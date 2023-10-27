@@ -22,10 +22,18 @@ public class CarBehaviour : Agent
 
     private float speed;
 
+    //Rewards
+    public float timePass;
+    public float speedCoeff;
+
     public override void Initialize()
     {
         controller = GetComponent<CarController>();
         rBody = GetComponent<Rigidbody>();
+
+        //Rewards
+        timePass = GetComponent<RewardStructure>().RightOval_timePass;
+        speedCoeff = GetComponent<RewardStructure>().RightOval_speedCoeff;
     }
 
     public override void OnEpisodeBegin()
@@ -52,8 +60,8 @@ public class CarBehaviour : Agent
         {
             EndEpisode();
         }
-        AddReward(-0.1f);
-        AddReward(speed * 0.01f);
+        AddReward(timePass);
+        AddReward(speed * speedCoeff);
     }
 
     public void MoveAgent(ActionBuffers actions)

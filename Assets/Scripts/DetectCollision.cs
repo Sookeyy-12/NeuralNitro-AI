@@ -7,10 +7,18 @@ public class DetectCollision : MonoBehaviour
 {
     public CarBehaviour carBehaviour;
 
+    //Rewards
+    public float hitCheck;
+    public float hitWall;
+
     private void Start()
     {
         carBehaviour = GetComponent<CarBehaviour>();
         Debug.Log("seces");
+
+        // Rewards
+        hitCheck = GetComponent<RewardStructure>().RightOval_hitCheck;
+        hitWall = GetComponent<RewardStructure>().RightOval_hitWall;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -18,12 +26,12 @@ public class DetectCollision : MonoBehaviour
         if (other.gameObject.CompareTag("Checkpoint"))
         {
             Debug.Log("Hit CheckPoint!");
-            carBehaviour.AddReward(1f);
+            carBehaviour.AddReward(hitCheck);
         }
         if (other.gameObject.CompareTag("Wall"))
         {
             Debug.Log("Hit Wall");
-            carBehaviour.AddReward(-10f);
+            carBehaviour.AddReward(hitWall);
             carBehaviour.EndEpisode();
         }
     }
