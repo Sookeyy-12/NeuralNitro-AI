@@ -23,7 +23,7 @@ public class DetectCollision : MonoBehaviour
         if (other.gameObject.CompareTag("Wall"))
         {
             Debug.Log("Hit Wall");
-            carBehaviour.AddReward(-1f);
+            carBehaviour.AddReward(-10f);
             carBehaviour.EndEpisode();
         }
     }

@@ -53,9 +53,9 @@ behaviors:
       gail:
         gamma: 0.99
         strength: 1.0
-        demo_path: "C:/Users/KIIT/Desktop/Learning Environments/NeuralNitro-AI/Demo/LeftOval.demo"
+        demo_path: "C:/Users/KIIT/Desktop/Learning Environments/NeuralNitro-AI/Demo/demo.demo"
     behavioral_cloning: 
-      demo_path: "C:/Users/KIIT/Desktop/Learning Environments/NeuralNitro-AI/Demo/LeftOval.demo"
+      demo_path: "C:/Users/KIIT/Desktop/Learning Environments/NeuralNitro-AI/Demo/demo.demo"
       strength: 1.0
     max_steps: 700000
     time_horizon: 64

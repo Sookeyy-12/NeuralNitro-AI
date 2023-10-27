@@ -18,7 +18,7 @@ public class CarBehaviour : Agent
     private float horizontalInput;
     private bool isBreaking;
 
-    private float maxTime = 60.0f, currentTime;
+    private float maxTime = 30.0f, currentTime;
 
     private float speed;
 
@@ -52,6 +52,8 @@ public class CarBehaviour : Agent
         {
             EndEpisode();
         }
+        AddReward(-0.1f);
+        AddReward(speed * 0.01f);
     }
 
     public void MoveAgent(ActionBuffers actions)
@@ -59,20 +61,37 @@ public class CarBehaviour : Agent
         float throttle = actions.ContinuousActions[0];
         float steer = actions.ContinuousActions[1];
 
-        float mappedThrottle = Mathf.Clamp(throttle, -1f, 1f);
+        float mappedThrottle = Mathf.Clamp(throttle, 0f, 1f);
         float mappedSteer = Mathf.Clamp(steer, -1f, 1f);
 
-        isBreaking = mappedThrottle < 0 ? true : false;
-
+        float braking = actions.DiscreteActions[0];
+        switch (braking)
+        {
+            case 0:
+                isBreaking = false;
+                break;
+            case 1:
+                isBreaking = true;
+                break;
+        }
+                
         controller.GetInput(mappedSteer, mappedThrottle, isBreaking);
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
         var continuousActionsOut = actionsOut.ContinuousActions;
+        var discreteActionsOut = actionsOut.DiscreteActions;
 
         continuousActionsOut[0] = Input.GetAxis("Vertical");
         continuousActionsOut[1] = Input.GetAxis("Horizontal");
+        if (Input.GetKey(KeyCode.Space))
+        {
+            discreteActionsOut[0] = 1;
+        } else
+        {
+            discreteActionsOut[0] = 0;
+        }
     }
 
     public void ResetEnv()
