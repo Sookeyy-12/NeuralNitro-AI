@@ -4,6 +4,7 @@ This log is meant to keep a track of the development process of this project. It
 
 ### 2023-10-28
 - Created Right Oval Track to train the Agent to take right turns.
+- Structured the Rewards in a single Script for ease in future.
 
 ### 2023-10-27
 - Updated Reward Function to a better one.
