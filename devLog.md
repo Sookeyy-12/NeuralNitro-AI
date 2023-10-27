@@ -24,3 +24,10 @@ This log is meant to keep a track of the development process of this project. It
 - Added DetectCollision script to detect collisions with Wall and Checkpoint for rewarding/punishing the agent.
 - Added Demo for Imititation Learning. (early stage and will be updated)
 - Added Speed of the car as an observation which was earlier giving an error.
+
+### 2023-10-27
+- Updated Reward Function to a better one.
+- Changed a few controls -> brake is discrete and throttle is only forwards now.
+- Updated the Config file for training using Imitation Learning for Left Oval Track.
+- Added a demo for Imitation Learning.
+- Used Imitation Learning to speed up the learning process of AI on Left Oval Track. *.onnx* saved in Models folder.
