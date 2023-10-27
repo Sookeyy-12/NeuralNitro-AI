@@ -2,6 +2,9 @@
 
 This log is meant to keep a track of the development process of this project. It is meant to be a reference for myself and others to see how the project has evolved over time. 
 
+### 2023-10-28
+- Created Right Oval Track to train the Agent to take right turns.
+
 ### 2023-10-27
 - Updated Reward Function to a better one.
 - Changed a few controls -> brake is discrete and throttle is only forwards now.
