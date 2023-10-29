@@ -58,7 +58,7 @@ public class CarBehaviour : Agent
         currentTime += Time.fixedDeltaTime;
         if (currentTime >= maxTime)
         {
-            EndEpisode();
+            //EndEpisode();
         }
         AddReward(timePass);
         AddReward(speed * speedCoeff);

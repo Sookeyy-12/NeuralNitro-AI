@@ -97,7 +97,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ml-agents": {
-      "version": "file:C:/Users/KIIT/ml-agents/com.unity.ml-agents",
+      "version": "file:C:/Users/ACER/ml-agents/com.unity.ml-agents",
       "depth": 0,
       "source": "local",
       "dependencies": {
