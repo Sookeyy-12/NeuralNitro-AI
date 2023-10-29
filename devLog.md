@@ -2,6 +2,11 @@
 
 This log is meant to keep a track of the development process of this project. It is meant to be a reference for myself and others to see how the project has evolved over time. 
 
+### 2023-10-29
+- Fixed a problem with the reward structure script.
+- Added a new set of Ray Perceptions to detect the opponent vehicles.
+- Retrained the agent on Left Oval track.
+
 ### 2023-10-28
 - Created Right Oval Track to train the Agent to take right turns.
 - Structured the Rewards in a single Script for ease in future.
