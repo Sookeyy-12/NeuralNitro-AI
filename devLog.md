@@ -7,6 +7,8 @@ This log is meant to keep a track of the development process of this project. It
 - Added a new set of Ray Perceptions to detect the opponent vehicles.
 - Retrained the agent on Left Oval track.
 - Trained the agent on Right Oval track for 3M steps as well.
+- Added a new Circuit
+- Made Prefabs for creating circuits faster.
 
 ### 2023-10-28
 - Created Right Oval Track to train the Agent to take right turns.
