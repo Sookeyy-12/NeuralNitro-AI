@@ -196,9 +196,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: ed36c0373b4fea84c9b491f7d89b8739, type: 3}
   m_InferenceDevice: 3
-  m_BehaviorType: 0
+  m_BehaviorType: 2
   m_BehaviorName: RaceCar
   TeamId: 0
   m_UseChildSensors: 1
@@ -264,8 +264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Record: 0
-  NumStepsToRecord: 0
-  DemonstrationName: RightOval
+  NumStepsToRecord: 5000
+  DemonstrationName: NewLeftOval
   DemonstrationDirectory: ./Demo
 --- !u!114 &7990259877486574261
 MonoBehaviour:

@@ -4,7 +4,7 @@ behaviors:
     hyperparameters:
       batch_size: 256
       buffer_size: 10240
-      learning_rate: 5.0e-4
+      learning_rate: 1.0e-4
       beta: 5.0e-4
       epsilon: 0.2
       lambd: 0.99
@@ -13,19 +13,21 @@ behaviors:
     network_settings:
       normalize: false
       hidden_units: 128
-      num_layers: 2
+      num_layers: 3
     reward_signals:
       extrinsic:
         gamma: 0.99
         strength: 0.4
-      # gail:
-      #   gamma: 0.99
-      #   strength: 0.5
-      #   demo_path: Demo\RightOval.demo
-    # behavioral_cloning: 
-    #   demo_path: Demo\RightOval.demo
-    #   strength: 0.5
-    #init_path: Backups\Models\LeftOval700k.pt
-    max_steps: 1500000 
+      gail:
+        gamma: 0.99
+        strength: 0.5
+        demo_path: Demo\NewRightOval.demo
+    behavioral_cloning: 
+      demo_path: Demo\NewRightOval.demo
+      strength: 0.5
+    init_path: Backups\Models\LeftOval3M.pt
+    max_steps: 3000000 
+    checkpoint_interval: 250000
+    keep_checkpoints: 10
     time_horizon: 64
-    summary_freq: 20000
+    summary_freq: 50000
