@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Checkpoint
+  - RaceCar
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - Checkpoint
   - Wall
-  - 
+  - RaceCar
   - 
   - 
   - 

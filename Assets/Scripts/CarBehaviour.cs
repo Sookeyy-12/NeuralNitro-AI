@@ -14,8 +14,6 @@ public class CarBehaviour : Agent
     public CarController controller;
     public GameObject spawn;
 
-    private float verticalInput;
-    private float horizontalInput;
     private bool isBreaking;
 
     private float maxTime = 30.0f, currentTime;
@@ -23,8 +21,9 @@ public class CarBehaviour : Agent
     private float speed;
 
     //Rewards
-    public float timePass;
-    public float speedCoeff;
+    RewardStructure rewardStructure;
+    private float timePass;
+    private float speedCoeff;
 
     public override void Initialize()
     {
@@ -32,8 +31,9 @@ public class CarBehaviour : Agent
         rBody = GetComponent<Rigidbody>();
 
         //Rewards
-        timePass = GetComponent<RewardStructure>().RightOval_timePass;
-        speedCoeff = GetComponent<RewardStructure>().RightOval_speedCoeff;
+        rewardStructure = GetComponent<RewardStructure>();
+        timePass = rewardStructure.RightOval_timePass;
+        speedCoeff = rewardStructure.RightOval_speedCoeff;
     }
 
     public override void OnEpisodeBegin()

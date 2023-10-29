@@ -8,17 +8,19 @@ public class DetectCollision : MonoBehaviour
     public CarBehaviour carBehaviour;
 
     //Rewards
-    public float hitCheck;
-    public float hitWall;
+    RewardStructure rewardStructure;
+    private float hitCheck;
+    private float hitWall;
 
     private void Start()
     {
         carBehaviour = GetComponent<CarBehaviour>();
         Debug.Log("seces");
-
-        // Rewards
-        hitCheck = GetComponent<RewardStructure>().RightOval_hitCheck;
-        hitWall = GetComponent<RewardStructure>().RightOval_hitWall;
+        
+        //Rewards
+        rewardStructure = GetComponent<RewardStructure>();
+        hitCheck = rewardStructure.RightOval_hitCheck;
+        hitWall = rewardStructure.RightOval_hitWall;
     }
 
     private void OnTriggerEnter(Collider other)

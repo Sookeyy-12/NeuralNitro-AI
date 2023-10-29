@@ -1,5 +1,64 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &11607648869688262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5740052199973759014}
+  - component: {fileID: 1885493903638928935}
+  m_Layer: 0
+  m_Name: OppSensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5740052199973759014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11607648869688262}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6189283706374313680}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1885493903638928935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11607648869688262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: RayPerceptionSensor
+  m_DetectableTags: []
+  m_RaysPerDirection: 10
+  m_MaxRayDegrees: 180
+  m_SphereCastRadius: 0.5
+  m_RayLength: 10
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  m_ObservationStacks: 2
+  m_AlternatingRayOrder: 1
+  rayHitColor: {r: 0.6643152, g: 0, b: 1, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: 0
 --- !u!1 &50068668262041116
 GameObject:
   m_ObjectHideFlags: 0
@@ -16,9 +75,11 @@ GameObject:
   - component: {fileID: 7946455167029645228}
   - component: {fileID: 3168358723102131325}
   - component: {fileID: 5204550955631681651}
-  m_Layer: 0
+  - component: {fileID: 1733072899231084093}
+  - component: {fileID: 7990259877486574261}
+  m_Layer: 8
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: RaceCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,6 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c62bcca2be128b4ab1388950e30e492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 4551152091882509161}
   motorForce: 2000
   breakForce: 5000
   maxSteerAngle: 40
@@ -125,12 +187,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 0
-    NumStackedVectorObservations: 1
+    VectorObservationSize: 1
+    NumStackedVectorObservations: 5
     m_ActionSpec:
       m_NumContinuousActions: 2
-      BranchSizes: 
-    VectorActionSize: 02000000
+      BranchSizes: 02000000
+    VectorActionSize: 
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
@@ -189,6 +251,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carBehaviour: {fileID: 0}
+--- !u!114 &1733072899231084093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50068668262041116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2902496c0120472b90269f94a0aec7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Record: 0
+  NumStepsToRecord: 0
+  DemonstrationName: RightOval
+  DemonstrationDirectory: ./Demo
+--- !u!114 &7990259877486574261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50068668262041116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f52c2b55745994f41b3e7739f9a79731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftOval_hitCheck: 1
+  LeftOval_hitWall: -10
+  LeftOval_timePass: -0.1
+  LeftOval_speedCoeff: 0.01
+  RightOval_hitCheck: 1
+  RightOval_hitWall: -10
+  RightOval_timePass: -0.1
+  RightOval_speedCoeff: 0.01
 --- !u!1 &488444093746020811
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +318,7 @@ Transform:
   m_Children:
   - {fileID: 1952024947314361020}
   - {fileID: 3720924598624215960}
+  - {fileID: 5740052199973759014}
   m_Father: {fileID: 5193764075521130484}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &948127236415610599

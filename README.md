@@ -1,6 +1,6 @@
 # Neural Nitro AI
 
-This is a learning environment for competitive racing car AI(s) made in Unity.
+This is a learning environment for competitive racing car AI agent(s) made in Unity.
 
 More details on this project soon.
 
