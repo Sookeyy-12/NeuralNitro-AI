@@ -4,6 +4,7 @@ This log is meant to keep a track of the development process of this project. It
 
 ### 2023-10-31
 - Trained the AI multiple times trying to get a good inference model. (kinda failed so far)
+- Added Final Circuit as a new Scene.
 
 ### 2023-10-29
 - Fixed a problem with the reward structure script.
