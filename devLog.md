@@ -2,6 +2,9 @@
 
 This log is meant to keep a track of the development process of this project. It is meant to be a reference for myself and others to see how the project has evolved over time. 
 
+### 2023-10-31
+- Trained the AI multiple times trying to get a good inference model. (kinda failed so far)
+
 ### 2023-10-29
 - Fixed a problem with the reward structure script.
 - Added a new set of Ray Perceptions to detect the opponent vehicles.
