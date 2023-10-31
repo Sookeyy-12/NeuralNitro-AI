@@ -20,7 +20,7 @@ public class RewardStructure : MonoBehaviour
 
     // Circuit Track;
     public float Circuit_hitCheck = 1f;
-    public float Circuit_hitWall = -200f; //-100 earlier
+    public float Circuit_hitWall = -200f;
     public float Circuit_timePass = -0.1f;
     public float Circuit_speedCoeff = 0.01f;
 }

@@ -6,6 +6,7 @@ using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 using System;
 using UnityEditor;
+using System.Reflection;
 
 public class CarBehaviour : Agent
 {
@@ -122,5 +123,18 @@ public class CarBehaviour : Agent
         this.transform.rotation = spawn.transform.rotation;
         rBody.velocity = Vector3.zero;
         rBody.angularVelocity = Vector3.zero;
+    }
+    
+    private void OnGUI()
+    {
+        float labelWidth = 100f;
+        float labelHeight = 20f;
+
+        Rect labelRect = new Rect((Screen.width - labelWidth) / 2, Screen.height - labelHeight - 10, labelWidth, labelHeight);
+
+        using (var layout = new GUILayout.AreaScope(labelRect))
+        {
+            GUILayout.Label("Speed: " + (int)(speed * 2.23694) + " mph");
+        }
     }
 }
