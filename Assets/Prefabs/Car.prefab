@@ -196,7 +196,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: ed36c0373b4fea84c9b491f7d89b8739, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: e2d490ea0168bca468d7c1d361d44459, type: 3}
   m_InferenceDevice: 3
   m_BehaviorType: 2
   m_BehaviorName: RaceCar
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Record: 0
   NumStepsToRecord: 5000
-  DemonstrationName: NewLeftOval
+  DemonstrationName: NewRightOval
   DemonstrationDirectory: ./Demo
 --- !u!114 &7990259877486574261
 MonoBehaviour:
@@ -496,7 +496,7 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.1
     m_AsymptoteValue: 1
-    m_Stiffness: 2
+    m_Stiffness: 2.1
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -745,7 +745,7 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.1
     m_AsymptoteValue: 1
-    m_Stiffness: 2
+    m_Stiffness: 2.1
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1078,7 +1078,7 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.1
     m_AsymptoteValue: 1
-    m_Stiffness: 2
+    m_Stiffness: 2.1
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1149,7 +1149,7 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.1
     m_AsymptoteValue: 1
-    m_Stiffness: 2
+    m_Stiffness: 2.1
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

@@ -19,6 +19,7 @@ public class CarBehaviour : Agent
     private float maxTime = 30.0f, currentTime;
 
     private float speed;
+    private float timeSpeedZero;
 
     //Rewards
     RewardStructure rewardStructure;
@@ -32,8 +33,8 @@ public class CarBehaviour : Agent
 
         //Rewards
         rewardStructure = GetComponent<RewardStructure>();
-        timePass = rewardStructure.RightOval_timePass;
-        speedCoeff = rewardStructure.RightOval_speedCoeff;
+        timePass = rewardStructure.Circuit_timePass;
+        speedCoeff = rewardStructure.Circuit_speedCoeff;
     }
 
     public override void OnEpisodeBegin()
@@ -47,7 +48,7 @@ public class CarBehaviour : Agent
         // Add speed of the agent as an observation
         Vector3 vel = rBody.velocity;
         speed = vel.magnitude;
-        Debug.Log((int)speed);
+        //Debug.Log((int)speed);
         sensor.AddObservation(speed);
     }
 
@@ -60,6 +61,19 @@ public class CarBehaviour : Agent
         {
             //EndEpisode();
         }
+        if (speed <= 1)
+        {
+            timeSpeedZero += Time.fixedDeltaTime;
+            if (timeSpeedZero >= 2f)
+            {
+                EndEpisode();
+                timeSpeedZero = 0f;
+            }
+        } else
+        {
+            timeSpeedZero = 0f;
+        }
+
         AddReward(timePass);
         AddReward(speed * speedCoeff);
     }

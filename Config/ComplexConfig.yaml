@@ -1,0 +1,26 @@
+behaviors:
+  RaceCar:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 256
+      buffer_size: 10240
+      learning_rate: 5.0e-5
+      beta: 7.5e-4
+      epsilon: 0.3
+      lambd: 0.995
+      num_epoch: 3
+      learning_rate_schedule: linear
+    network_settings:
+      normalize: false
+      hidden_units: 128
+      num_layers: 3
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+    init_path: results\CircuitCompLE2\RaceCar\RaceCar-10000052.pt
+    max_steps: 25000000 
+    checkpoint_interval: 500000
+    keep_checkpoints: 100
+    time_horizon: 64
+    summary_freq: 100000

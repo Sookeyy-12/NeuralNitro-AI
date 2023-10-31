@@ -1,0 +1,290 @@
+{
+    "RaceCar": {
+        "checkpoints": [
+            {
+                "steps": 499983,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-499983.onnx",
+                "reward": 129.37629131227732,
+                "creation_time": 1698677701.9419186,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-499983.pt"
+                ]
+            },
+            {
+                "steps": 939829,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-939829.onnx",
+                "reward": 129.6192572414875,
+                "creation_time": 1698678447.8615713,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-939829.pt"
+                ]
+            },
+            {
+                "steps": 5499945,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-5499945.onnx",
+                "reward": 131.53430690765381,
+                "creation_time": 1698679261.337543,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-5499945.pt"
+                ]
+            },
+            {
+                "steps": 5999978,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-5999978.onnx",
+                "reward": 136.47530794143677,
+                "creation_time": 1698680029.929319,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-5999978.pt"
+                ]
+            },
+            {
+                "steps": 6499937,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-6499937.onnx",
+                "reward": 138.93733276426792,
+                "creation_time": 1698680819.0674818,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-6499937.pt"
+                ]
+            },
+            {
+                "steps": 6999988,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-6999988.onnx",
+                "reward": 581.4847065508366,
+                "creation_time": 1698681560.1531067,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-6999988.pt"
+                ]
+            },
+            {
+                "steps": 7499939,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-7499939.onnx",
+                "reward": null,
+                "creation_time": 1698682292.6075335,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-7499939.pt"
+                ]
+            },
+            {
+                "steps": 7999975,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-7999975.onnx",
+                "reward": 2371.918607980013,
+                "creation_time": 1698683023.3205993,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-7999975.pt"
+                ]
+            },
+            {
+                "steps": 8499975,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-8499975.onnx",
+                "reward": null,
+                "creation_time": 1698683756.491127,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-8499975.pt"
+                ]
+            },
+            {
+                "steps": 8999960,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-8999960.onnx",
+                "reward": 620.4306434094906,
+                "creation_time": 1698684485.8287365,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-8999960.pt"
+                ]
+            },
+            {
+                "steps": 9499936,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-9499936.onnx",
+                "reward": null,
+                "creation_time": 1698685229.0106332,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-9499936.pt"
+                ]
+            },
+            {
+                "steps": 9999988,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-9999988.onnx",
+                "reward": null,
+                "creation_time": 1698685992.1253238,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-9999988.pt"
+                ]
+            },
+            {
+                "steps": 10000052,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-10000052.onnx",
+                "reward": null,
+                "creation_time": 1698685992.2102165,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-10000052.pt"
+                ]
+            },
+            {
+                "steps": 10057166,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-10057166.onnx",
+                "reward": 12.744023203849792,
+                "creation_time": 1698688234.0179374,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-10057166.pt"
+                ]
+            },
+            {
+                "steps": 10499993,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-10499993.onnx",
+                "reward": 118.22681660205126,
+                "creation_time": 1698689169.3623593,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-10499993.pt"
+                ]
+            },
+            {
+                "steps": 10999973,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-10999973.onnx",
+                "reward": 112.62740216962993,
+                "creation_time": 1698689805.3169394,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-10999973.pt"
+                ]
+            },
+            {
+                "steps": 11000037,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-11000037.onnx",
+                "reward": 112.62740216962993,
+                "creation_time": 1698689805.3971126,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-11000037.pt"
+                ]
+            },
+            {
+                "steps": 10499968,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-10499968.onnx",
+                "reward": 11.424538373947144,
+                "creation_time": 1698690677.8015022,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-10499968.pt"
+                ]
+            },
+            {
+                "steps": 10858862,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-10858862.onnx",
+                "reward": null,
+                "creation_time": 1698691207.5593894,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-10858862.pt"
+                ]
+            },
+            {
+                "steps": 10499949,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-10499949.onnx",
+                "reward": null,
+                "creation_time": 1698691942.15988,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-10499949.pt"
+                ]
+            },
+            {
+                "steps": 10999965,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-10999965.onnx",
+                "reward": 187.25483302623033,
+                "creation_time": 1698692582.482546,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-10999965.pt"
+                ]
+            },
+            {
+                "steps": 11499958,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-11499958.onnx",
+                "reward": 117.27341799438,
+                "creation_time": 1698693228.8871593,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-11499958.pt"
+                ]
+            },
+            {
+                "steps": 11999987,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-11999987.onnx",
+                "reward": null,
+                "creation_time": 1698693874.4714522,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-11999987.pt"
+                ]
+            },
+            {
+                "steps": 12499946,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-12499946.onnx",
+                "reward": 126.5812097620219,
+                "creation_time": 1698694517.0171695,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-12499946.pt"
+                ]
+            },
+            {
+                "steps": 12999967,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-12999967.onnx",
+                "reward": 124.33145526051521,
+                "creation_time": 1698695165.8761804,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-12999967.pt"
+                ]
+            },
+            {
+                "steps": 13499958,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-13499958.onnx",
+                "reward": 127.29734515845776,
+                "creation_time": 1698695809.0544074,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-13499958.pt"
+                ]
+            },
+            {
+                "steps": 13999965,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-13999965.onnx",
+                "reward": 120.92667528428137,
+                "creation_time": 1698696458.4318032,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-13999965.pt"
+                ]
+            },
+            {
+                "steps": 14499951,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-14499951.onnx",
+                "reward": 44.702984757721424,
+                "creation_time": 1698697104.7571018,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-14499951.pt"
+                ]
+            },
+            {
+                "steps": 14999992,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-14999992.onnx",
+                "reward": 227.40212265774608,
+                "creation_time": 1698697749.7732987,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-14999992.pt"
+                ]
+            },
+            {
+                "steps": 15000056,
+                "file_path": "results\\CircuitCompLE2\\RaceCar\\RaceCar-15000056.onnx",
+                "reward": 227.40212265774608,
+                "creation_time": 1698697749.85967,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE2\\RaceCar\\RaceCar-15000056.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 15000056,
+            "file_path": "results\\CircuitCompLE2\\RaceCar.onnx",
+            "reward": 227.40212265774608,
+            "creation_time": 1698697749.85967,
+            "auxillary_file_paths": [
+                "results\\CircuitCompLE2\\RaceCar\\RaceCar-15000056.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cu118"
+    }
+}

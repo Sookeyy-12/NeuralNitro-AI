@@ -1,0 +1,155 @@
+{
+    "RaceCar": {
+        "checkpoints": [
+            {
+                "steps": 749969,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-749969.onnx",
+                "reward": null,
+                "creation_time": 1698607704.6099381,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-749969.pt"
+                ]
+            },
+            {
+                "steps": 999991,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-999991.onnx",
+                "reward": -12.93505334854126,
+                "creation_time": 1698608460.7744243,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-999991.pt"
+                ]
+            },
+            {
+                "steps": 1249958,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-1249958.onnx",
+                "reward": 93.07537021381515,
+                "creation_time": 1698609220.537675,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-1249958.pt"
+                ]
+            },
+            {
+                "steps": 1499949,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-1499949.onnx",
+                "reward": -9.846886396408081,
+                "creation_time": 1698609986.4447637,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-1499949.pt"
+                ]
+            },
+            {
+                "steps": 1749946,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-1749946.onnx",
+                "reward": 80.6529567738374,
+                "creation_time": 1698610750.3204284,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-1749946.pt"
+                ]
+            },
+            {
+                "steps": 1999971,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-1999971.onnx",
+                "reward": -8.135978676654675,
+                "creation_time": 1698611512.0155241,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-1999971.pt"
+                ]
+            },
+            {
+                "steps": 2249961,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-2249961.onnx",
+                "reward": -9.910847902297974,
+                "creation_time": 1698612279.6194537,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-2249961.pt"
+                ]
+            },
+            {
+                "steps": 2499993,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-2499993.onnx",
+                "reward": -7.726155434335981,
+                "creation_time": 1698613047.2818227,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-2499993.pt"
+                ]
+            },
+            {
+                "steps": 2749979,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-2749979.onnx",
+                "reward": 115.51482906423766,
+                "creation_time": 1698613809.2304857,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-2749979.pt"
+                ]
+            },
+            {
+                "steps": 2999941,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-2999941.onnx",
+                "reward": null,
+                "creation_time": 1698614573.8679423,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-2999941.pt"
+                ]
+            },
+            {
+                "steps": 3249949,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-3249949.onnx",
+                "reward": -16.215436160564423,
+                "creation_time": 1698615333.9768746,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-3249949.pt"
+                ]
+            },
+            {
+                "steps": 3499939,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-3499939.onnx",
+                "reward": -7.683747362345457,
+                "creation_time": 1698616095.3070257,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-3499939.pt"
+                ]
+            },
+            {
+                "steps": 3749974,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-3749974.onnx",
+                "reward": null,
+                "creation_time": 1698616854.4592595,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-3749974.pt"
+                ]
+            },
+            {
+                "steps": 3999976,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-3999976.onnx",
+                "reward": -13.871133128801981,
+                "creation_time": 1698617622.8535109,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-3999976.pt"
+                ]
+            },
+            {
+                "steps": 4000040,
+                "file_path": "results\\CircuitCompLE\\RaceCar\\RaceCar-4000040.onnx",
+                "reward": -13.871133128801981,
+                "creation_time": 1698617622.9357197,
+                "auxillary_file_paths": [
+                    "results\\CircuitCompLE\\RaceCar\\RaceCar-4000040.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 4000040,
+            "file_path": "results\\CircuitCompLE\\RaceCar.onnx",
+            "reward": -13.871133128801981,
+            "creation_time": 1698617622.9357197,
+            "auxillary_file_paths": [
+                "results\\CircuitCompLE\\RaceCar\\RaceCar-4000040.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cu118"
+    }
+}
