@@ -2,10 +2,16 @@
 
 This log is meant to keep a track of the development process of this project. It is meant to be a reference for myself and others to see how the project has evolved over time. 
 
+### 2023-11-01
+- Restarted Final training for the AI
+- Trained on Left Oval
+- Trained on Right Oval
+
 ### 2023-10-31
 - Trained the AI multiple times trying to get a good inference model. (kinda failed so far)
 - Added Final Circuit as a new Scene.
 - Added multiple tracks for curriculum learning.
+- Uploaded **NeuralNitro_v0** to [itch.io](https://sookeyy.itch.io/neuralnitro) 
 
 ### 2023-10-29
 - Fixed a problem with the reward structure script.
