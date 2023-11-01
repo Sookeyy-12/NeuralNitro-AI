@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 3168358723102131325}
   - component: {fileID: 5204550955631681651}
   - component: {fileID: 1733072899231084093}
-  - component: {fileID: 7990259877486574261}
+  - component: {fileID: 2661641784502364857}
   m_Layer: 8
   m_Name: Car
   m_TagString: RaceCar
@@ -196,9 +196,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 375ff155837b5384e8da1183fb5e6e55, type: 3}
+  m_Model: {fileID: 0}
   m_InferenceDevice: 3
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: RaceCar
   TeamId: 0
   m_UseChildSensors: 1
@@ -220,7 +220,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   rBody: {fileID: 0}
   controller: {fileID: 0}
   spawn: {fileID: 0}
@@ -264,10 +264,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Record: 0
-  NumStepsToRecord: 5000
-  DemonstrationName: NewRightOval
+  NumStepsToRecord: 4000
+  DemonstrationName: NN-RightShort-Demo
   DemonstrationDirectory: ./Demo
---- !u!114 &7990259877486574261
+--- !u!114 &2661641784502364857
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LeftOval_hitCheck: 1
-  LeftOval_hitWall: -10
+  LeftOval_hitWall: -50
   LeftOval_timePass: -0.1
   LeftOval_speedCoeff: 0.01
   RightOval_hitCheck: 1
@@ -288,7 +288,7 @@ MonoBehaviour:
   RightOval_timePass: -0.1
   RightOval_speedCoeff: 0.01
   Circuit_hitCheck: 1
-  Circuit_hitWall: -10
+  Circuit_hitWall: -200
   Circuit_timePass: -0.1
   Circuit_speedCoeff: 0.01
 --- !u!1 &488444093746020811

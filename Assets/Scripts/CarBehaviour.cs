@@ -34,8 +34,8 @@ public class CarBehaviour : Agent
 
         //Rewards
         rewardStructure = GetComponent<RewardStructure>();
-        timePass = rewardStructure.Circuit_timePass;
-        speedCoeff = rewardStructure.Circuit_speedCoeff;
+        timePass = rewardStructure.LeftOval_timePass;
+        speedCoeff = rewardStructure.LeftOval_speedCoeff;
     }
 
     public override void OnEpisodeBegin()

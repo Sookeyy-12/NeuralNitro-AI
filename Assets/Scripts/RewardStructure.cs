@@ -8,7 +8,7 @@ public class RewardStructure : MonoBehaviour
 {
     // Left Oval Track;
     public float LeftOval_hitCheck = 1f;
-    public float LeftOval_hitWall = -10f;
+    public float LeftOval_hitWall = -50f;
     public float LeftOval_timePass = -0.1f;
     public float LeftOval_speedCoeff = 0.01f;
 

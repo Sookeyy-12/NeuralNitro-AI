@@ -1,0 +1,98 @@
+default_settings: null
+behaviors:
+  RaceCar:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 256
+      buffer_size: 10240
+      learning_rate: 5.0e-05
+      beta: 0.0005
+      epsilon: 0.3
+      lambd: 0.995
+      num_epoch: 3
+      shared_critic: false
+      learning_rate_schedule: linear
+      beta_schedule: linear
+      epsilon_schedule: linear
+    network_settings:
+      normalize: false
+      hidden_units: 128
+      num_layers: 3
+      vis_encode_type: simple
+      memory: null
+      goal_conditioning_type: hyper
+      deterministic: false
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 0.1
+        network_settings:
+          normalize: false
+          hidden_units: 128
+          num_layers: 2
+          vis_encode_type: simple
+          memory: null
+          goal_conditioning_type: hyper
+          deterministic: false
+      gail:
+        gamma: 0.99
+        strength: 0.9
+        network_settings:
+          normalize: false
+          hidden_units: 128
+          num_layers: 2
+          vis_encode_type: simple
+          memory: null
+          goal_conditioning_type: hyper
+          deterministic: false
+        learning_rate: 0.0003
+        encoding_size: null
+        use_actions: false
+        use_vail: false
+        demo_path: Demo\NN-LeftOval-Demo.demo
+    init_path: null
+    keep_checkpoints: 100
+    checkpoint_interval: 250000
+    max_steps: 5000000
+    time_horizon: 64
+    summary_freq: 50000
+    threaded: false
+    self_play: null
+    behavioral_cloning:
+      demo_path: Demo\NN-LeftOval-Demo.demo
+      steps: 0
+      strength: 0.9
+      samples_per_update: 0
+      num_epoch: null
+      batch_size: null
+env_settings:
+  env_path: null
+  env_args: null
+  base_port: 5005
+  num_envs: 1
+  num_areas: 1
+  seed: -1
+  max_lifetime_restarts: 10
+  restarts_rate_limit_n: 1
+  restarts_rate_limit_period_s: 60
+engine_settings:
+  width: 84
+  height: 84
+  quality_level: 5
+  time_scale: 20.0
+  target_frame_rate: -1
+  capture_frame_rate: 60
+  no_graphics: false
+environment_parameters: null
+checkpoint_settings:
+  run_id: NN-LeftOval
+  initialize_from: null
+  load_model: false
+  resume: false
+  force: true
+  train_model: false
+  inference: false
+  results_dir: results
+torch_settings:
+  device: null
+debug: false
