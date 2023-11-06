@@ -2,6 +2,12 @@
 
 This log is meant to keep a track of the development process of this project. It is meant to be a reference for myself and others to see how the project has evolved over time. 
 
+### 2023-06-11
+- Used Reinforcement Learning to train the ai for 99M steps on all tracks simultaneously.
+- Made UI for the game.
+- updated itch.io pages with latest version of the game (v3)
+- 
+
 ### 2023-11-01
 - Restarted Final training for the AI
 - Trained on Left Oval
