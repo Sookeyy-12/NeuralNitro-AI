@@ -4,8 +4,8 @@ behaviors:
     hyperparameters:
       batch_size: 256
       buffer_size: 10240
-      learning_rate: 5.0e-5
-      beta: 7.5e-4
+      learning_rate: 1.0e-5
+      beta: 5.0e-4
       epsilon: 0.3
       lambd: 0.995
       num_epoch: 3
@@ -18,9 +18,9 @@ behaviors:
       extrinsic:
         gamma: 0.99
         strength: 1.0
-    init_path: results\CircuitCompLE2\RaceCar\RaceCar-10000052.pt
-    max_steps: 25000000 
-    checkpoint_interval: 500000
+    init_path: results\TrainEverything3\RaceCar\RaceCar-75000349.pt
+    max_steps: 100000000 
+    checkpoint_interval: 1000000
     keep_checkpoints: 100
     time_horizon: 64
-    summary_freq: 100000
+    summary_freq: 250000

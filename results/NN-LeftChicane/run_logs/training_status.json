@@ -1,0 +1,209 @@
+{
+    "RaceCar": {
+        "checkpoints": [
+            {
+                "steps": 249958,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-249958.onnx",
+                "reward": -34.68604165017605,
+                "creation_time": 1698978064.2608745,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-249958.pt"
+                ]
+            },
+            {
+                "steps": 499998,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-499998.onnx",
+                "reward": -27.93648600622135,
+                "creation_time": 1698978457.6847029,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-499998.pt"
+                ]
+            },
+            {
+                "steps": 749995,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-749995.onnx",
+                "reward": -88.6538661744159,
+                "creation_time": 1698978855.156464,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-749995.pt"
+                ]
+            },
+            {
+                "steps": 999968,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-999968.onnx",
+                "reward": -37.0870159342885,
+                "creation_time": 1698979263.4493027,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-999968.pt"
+                ]
+            },
+            {
+                "steps": 1249961,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-1249961.onnx",
+                "reward": -43.04167514729003,
+                "creation_time": 1698979674.9729187,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-1249961.pt"
+                ]
+            },
+            {
+                "steps": 1499938,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-1499938.onnx",
+                "reward": -54.23813874111511,
+                "creation_time": 1698980076.4977884,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-1499938.pt"
+                ]
+            },
+            {
+                "steps": 1749992,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-1749992.onnx",
+                "reward": -95.31001572310925,
+                "creation_time": 1698980485.695047,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-1749992.pt"
+                ]
+            },
+            {
+                "steps": 1999966,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-1999966.onnx",
+                "reward": -65.57895994735391,
+                "creation_time": 1698980890.0222993,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-1999966.pt"
+                ]
+            },
+            {
+                "steps": 2249983,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-2249983.onnx",
+                "reward": -22.1680267797783,
+                "creation_time": 1698981290.0872118,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-2249983.pt"
+                ]
+            },
+            {
+                "steps": 2499938,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-2499938.onnx",
+                "reward": -332.46256291990477,
+                "creation_time": 1698981688.060289,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-2499938.pt"
+                ]
+            },
+            {
+                "steps": 2749973,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-2749973.onnx",
+                "reward": -198.74434308281965,
+                "creation_time": 1698982096.1697793,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-2749973.pt"
+                ]
+            },
+            {
+                "steps": 2999971,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-2999971.onnx",
+                "reward": -350.14406478591263,
+                "creation_time": 1698982519.532488,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-2999971.pt"
+                ]
+            },
+            {
+                "steps": 3249939,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-3249939.onnx",
+                "reward": -38.240026125994824,
+                "creation_time": 1698983472.7836993,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-3249939.pt"
+                ]
+            },
+            {
+                "steps": 3499966,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-3499966.onnx",
+                "reward": -151.81503674387932,
+                "creation_time": 1698984451.1646724,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-3499966.pt"
+                ]
+            },
+            {
+                "steps": 3749961,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-3749961.onnx",
+                "reward": -141.7233551988999,
+                "creation_time": 1698985403.8953614,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-3749961.pt"
+                ]
+            },
+            {
+                "steps": 3999991,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-3999991.onnx",
+                "reward": -87.23601009938866,
+                "creation_time": 1698986339.304556,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-3999991.pt"
+                ]
+            },
+            {
+                "steps": 4249974,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-4249974.onnx",
+                "reward": -90.28001591563225,
+                "creation_time": 1698987315.2721083,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-4249974.pt"
+                ]
+            },
+            {
+                "steps": 4499963,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-4499963.onnx",
+                "reward": -1.9975380469113588,
+                "creation_time": 1698988265.702626,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-4499963.pt"
+                ]
+            },
+            {
+                "steps": 4749947,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-4749947.onnx",
+                "reward": -14.155501981824637,
+                "creation_time": 1698989219.4874196,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-4749947.pt"
+                ]
+            },
+            {
+                "steps": 4999959,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-4999959.onnx",
+                "reward": -109.52751234807074,
+                "creation_time": 1698990174.6598651,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-4999959.pt"
+                ]
+            },
+            {
+                "steps": 5000023,
+                "file_path": "results\\NN-LeftChicane\\RaceCar\\RaceCar-5000023.onnx",
+                "reward": -109.52751234807074,
+                "creation_time": 1698990174.8983073,
+                "auxillary_file_paths": [
+                    "results\\NN-LeftChicane\\RaceCar\\RaceCar-5000023.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5000023,
+            "file_path": "results\\NN-LeftChicane\\RaceCar.onnx",
+            "reward": -109.52751234807074,
+            "creation_time": 1698990174.8983073,
+            "auxillary_file_paths": [
+                "results\\NN-LeftChicane\\RaceCar\\RaceCar-5000023.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cu118"
+    }
+}

@@ -27,6 +27,10 @@ public class CarBehaviour : Agent
     private float timePass;
     private float speedCoeff;
 
+    //RayPerceptionSensors
+    public RayPerceptionSensorComponent3D wall;
+    public RayPerceptionSensorComponent3D checkpoint;
+
     public override void Initialize()
     {
         controller = GetComponent<CarController>();
@@ -34,8 +38,8 @@ public class CarBehaviour : Agent
 
         //Rewards
         rewardStructure = GetComponent<RewardStructure>();
-        timePass = rewardStructure.LeftOval_timePass;
-        speedCoeff = rewardStructure.LeftOval_speedCoeff;
+        timePass = rewardStructure.standard_timePass;
+        speedCoeff = rewardStructure.standard_speedCoeff;
     }
 
     public override void OnEpisodeBegin()
@@ -125,6 +129,7 @@ public class CarBehaviour : Agent
         rBody.angularVelocity = Vector3.zero;
     }
     
+    /*
     private void OnGUI()
     {
         float labelWidth = 100f;
@@ -136,5 +141,5 @@ public class CarBehaviour : Agent
         {
             GUILayout.Label("Speed: " + (int)(speed * 2.23694) + " mph");
         }
-    }
+    }*/
 }

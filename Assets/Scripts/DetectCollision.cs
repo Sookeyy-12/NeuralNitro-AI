@@ -20,8 +20,8 @@ public class DetectCollision : MonoBehaviour
         
         //Rewards
         rewardStructure = GetComponent<RewardStructure>();
-        hitCheck = rewardStructure.LeftOval_hitCheck;
-        hitWall = rewardStructure.LeftOval_hitWall;
+        hitCheck = rewardStructure.standard_hitCheck;
+        hitWall = rewardStructure.standard_hitWall;
     }
 
     private void OnTriggerEnter(Collider other)

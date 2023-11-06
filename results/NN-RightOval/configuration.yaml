@@ -25,7 +25,7 @@ behaviors:
     reward_signals:
       extrinsic:
         gamma: 0.99
-        strength: 0.1
+        strength: 0.3
         network_settings:
           normalize: false
           hidden_units: 128
@@ -89,7 +89,7 @@ checkpoint_settings:
   initialize_from: null
   load_model: false
   resume: false
-  force: false
+  force: true
   train_model: false
   inference: false
   results_dir: results

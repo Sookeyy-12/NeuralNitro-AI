@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 5204550955631681651}
   - component: {fileID: 1733072899231084093}
   - component: {fileID: 2661641784502364857}
+  - component: {fileID: 8865142734114322904}
   m_Layer: 8
   m_Name: Car
   m_TagString: RaceCar
@@ -142,7 +143,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -196,9 +197,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 693ce21d9e432f74185ce90b36a969bb, type: 3}
   m_InferenceDevice: 3
-  m_BehaviorType: 0
+  m_BehaviorType: 2
   m_BehaviorName: RaceCar
   TeamId: 0
   m_UseChildSensors: 1
@@ -220,10 +221,12 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 0
   rBody: {fileID: 0}
   controller: {fileID: 0}
   spawn: {fileID: 0}
+  wall: {fileID: 0}
+  checkpoint: {fileID: 0}
 --- !u!114 &3168358723102131325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,7 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Record: 0
   NumStepsToRecord: 4000
-  DemonstrationName: NN-RightShort-Demo
+  DemonstrationName: NN-RightChicane
   DemonstrationDirectory: ./Demo
 --- !u!114 &2661641784502364857
 MonoBehaviour:
@@ -287,10 +290,42 @@ MonoBehaviour:
   RightOval_hitWall: -10
   RightOval_timePass: -0.1
   RightOval_speedCoeff: 0.01
+  LeftShortOval_hitCheck: 5
+  LeftShortOval_hitWall: -100
+  LeftShortOval_timePass: -0.01
+  LeftShortOval_speedCoeff: 0
+  LeftChicane_hitCheck: 5
+  LeftChicane_hitWall: -100
+  LeftChicane_timePass: -0.1
+  LeftChicane_speedCoeff: 0.01
+  RightChicane_hitCheck: 5
+  RightChicane_hitWall: -100
+  RightChicane_timePass: -0.1
+  RightChicane_speedCoeff: 0.01
   Circuit_hitCheck: 1
   Circuit_hitWall: -200
   Circuit_timePass: -0.1
   Circuit_speedCoeff: 0.01
+  standard_hitCheck: 1
+  standard_hitWall: -100
+  standard_timePass: -0.1
+  standard_speedCoeff: 0.01
+--- !u!114 &8865142734114322904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50068668262041116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfb38181f7f38ae4d85004c86c64a6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 0}
+  speedText: {fileID: 0}
+  lapTimeText: {fileID: 0}
+  lapBoardText: {fileID: 0}
 --- !u!1 &488444093746020811
 GameObject:
   m_ObjectHideFlags: 0
