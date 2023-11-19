@@ -1,5 +1,7 @@
 # Neural Nitro: Racing Car Learning Environment
-(Images\Neural.gif)
+
+<img width="500" src="Images\Neural.gif"/>
+
 ## Overview
 
 Welcome to Neural Nitro, a Unity-based learning environment designed for training and evaluating reinforcement learning agents in the exciting domain of racing car simulations. Whether you're a student, researcher, or developer, Neural Nitro provides a dynamic platform to explore and experiment with state-of-the-art reinforcement learning algorithms for autonomous driving.
@@ -35,20 +37,20 @@ Follow these steps to get started with Neural Nitro:
 - 1 set of Ray Perception Sensors to detect the Walls placed around the track.
 - 1 set of Ray Perception Sensors to detect the checkpoints placed at every few intervals on the track.
 - Speed of the agent as an observation.
-- (Images\ObservationSpace.png)
+<img width="500" src="Images\ObservationSpace.png"/>
 
 ## Action Space
 - **Throttle**: Continuous action space with a range of 0 to 1.
 - **Steer**: Continuous action space with a range of -1 to 1.
 - **Brake**: Discrete action.
-(Images\ActionSpace.png)
+<img width="500" src="Images\ActionSpace.png"/>
 
 ## Reward Function
 - **Contact with a checkpoint**: +ve reward for contact with the checkpoint.
 - **Contact with a wall**: -ve reward for contact with the wall.
 - **Step Reward**: small -ve reward for every step taken by the agent.
 - **Speed Reward**: small coefficient multiplied by the speed of the agent.
-(Images\RewardStructure.png)
+<img width="500" src="Images\RewardStructure.png"/>
 
 ## Contribution Guidelines
 
