@@ -38,8 +38,8 @@ public class CarBehaviour : Agent
 
         //Rewards
         rewardStructure = GetComponent<RewardStructure>();
-        timePass = rewardStructure.standard_timePass;
-        speedCoeff = rewardStructure.standard_speedCoeff;
+        timePass = rewardStructure.time_pass;
+        speedCoeff = rewardStructure.speed_coeff;
     }
 
     public override void OnEpisodeBegin()

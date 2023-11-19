@@ -20,8 +20,8 @@ public class DetectCollision : MonoBehaviour
         
         //Rewards
         rewardStructure = GetComponent<RewardStructure>();
-        hitCheck = rewardStructure.standard_hitCheck;
-        hitWall = rewardStructure.standard_hitWall;
+        hitCheck = rewardStructure.hit_check;
+        hitWall = rewardStructure.hit_wall;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,6 +30,10 @@ public class DetectCollision : MonoBehaviour
         {
             //Debug.Log("Hit CheckPoint!");
             carBehaviour.AddReward(hitCheck);
+        }
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            carBehaviour.EndEpisode();
         }
     }
     private void OnCollisionEnter(Collision collision)
